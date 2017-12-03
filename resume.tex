@@ -23,6 +23,7 @@
 \documentclass{resume} % Use the custom resume.cls style
 \usepackage[left=0.45in,top=0.6in,right=0.45in,bottom=0.6in]{geometry} % Document margins
 \usepackage{color}
+\usepackage{hyperref}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Falak Shah} % Your name
@@ -32,9 +33,9 @@
 %\address{(+91)940.813.0235 \\ falaktheoptimist@gmail.com} % Your phone number and email
 
 \begin{document}
-\noindent	falaktheoptimist@gmail.com \hfill \hfill  A-163,Ashoknagar Society,
-\\
-\noindent (+91) 940-813-0235 \hfill \hfill  Satellite, Ahmedabad-15\\
+\noindent	falaktheoptimist@gmail.com \hfill \hfill  A-163,Ashoknagar Society, \\
+\noindent (+91) 940-813-0235 \hfill \hfill  Satellite, Ahmedabad-380015, \\
+\noindent \href{https://www.linkedin.com/in/falak-shah/}{LinkedIn} \hfill \hfill Gujarat, India.\\
 
 	%----------------------------------------------------------------------------------------
 	%	EDUCATION SECTION
@@ -61,11 +62,11 @@
 	
 	\begin{rSection}{Technical Strengths}
 		
-		\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-			Languages &  Python, C/C++, MATLAB, C\# \\
-			DL Toolkits & Keras, Tensorflow, Scikit Learn\\
-			Software \& Technologies &   Apache Spark, LaTeX, Excel, HTML, JavaScript \\
-			Areas of Interest &   Machine Learning, Computer Vision, Digital Signal Processing
+		\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
+			Languages &  Python, Matlab, C/C++, C\# \\
+			DL Toolkits &  TensorFlow, Keras, Scikit Learn\\
+			Software \& Technologies &   Apache Spark, Simulink, LaTeX, MS Office, SVN, Git\\
+			Areas of Interest &   Machine Learning, Computer Vision, Signal Processing, Convex Optimization
 		\end{tabular}
 		
 	\end{rSection}
@@ -77,9 +78,9 @@
 	\begin{rSection}{Experience}
 		
 		\begin{rSubsection}{Research Scientist, Infocusp}{June 2015- Present}{}{}
-			\item Working with our client, Cerebellum Capital (CCI) on employing Machine learning to discover and improve upon trading strategies
+			\item Developed a library for visual representation of feature learning  in neural networks: \href{https://github.com/InFoCusp/tf_cnnvis}{tf\_cnnvis}.
+			\item Working with our client, Cerebellum Capital (CCI) on employing Machine learning to discover and improve upon trading strategies likely to perform well out of sample
 			\item Designed a portfolio optimizer for CCI which involved translating their financial domain constraints and concepts into a convex optimization problem
-			\item Working on project "Deepdive" aimed at understanding the innards of Convolutional Neural networks. We aim to  develop a library for visual representation of the network layers.
 			\item Keeping up-to-date with the state of the art research/ tools in the fields of ML and Computer vision.
 
 		\end{rSubsection}
@@ -88,13 +89,14 @@
 		%------------------------------------------------
 		
 		\begin{rSubsection}{Graduate Teaching Assistant, DA-IICT}{July, 2013 - May, 2015}{}{}
+			\item Conducted labs/ tutorial sessions for the B.Tech batch at DA-IICT for the following subjects:
 			\item Digital Signal Processing 
 			\item Signal and Systems
 			\item Analog and Digital Communication
 		\end{rSubsection}
 		
 			\begin{rSubsection}{Intern, Indian Space Research Organization}{Jan, 2013 - May, 2013}{}{}
-				\item Designed a robust GPS receiver in Simulink. It made use of Kalman filter for seamless traking loop operation even under severe ionospheric scinitllations.
+				\item Designed and ran simulations on a highly robust GPS receiver model using Simulink. It made use of Kalman filter for seamless tracking loop operation even under severe ionospheric scinitllations. 
 			\end{rSubsection}
 	\end{rSection}
 	
@@ -104,19 +106,53 @@
 	
 	\begin{rSection}{Achievements} \itemsep -2pt
 		\item President's Gold Medal for Academic Excellence, 2015 Masters batch at DA-IICT
-		\item Ranked in National Top 0.25\% in Graduate Aptitude Test in Engineering (GATE)
-		\item Ranked in National Top 1\% in All India Engineering Entrance Examination (AIEEE)
 		\item Stood first in "Pixel Pundit" - a National level image processing competition organized by IISc Bengaluru and Carl Zeiss
 		\item Stood first in circuit debugging contest at a National level Techfest at Nirma
-		University in February, 2012.
+		University.
+		\item Ranked in National Top 0.25\% in Graduate Aptitude Test in Engineering (GATE)
+%		\item Ranked in National Top 1\% in All India Engineering Entrance Examination (AIEEE)
+
 	\end{rSection}
 	
 	%----------------------------------------------------------------------------------------
 
 	\begin{rSection}{Publications}
+		\item Co authoring a book "Professional TensorFlow" for Packt Publishing (expected completion: Feb, 2018). This will serve as a student as well as instructor guide for practical trainings on TensorFlow. 
 		\item F. Shah, P. Shah and R. Dubey, "Specularity Removal for Robust Road Detection," IEEE International Conference Region 10 (TENCON), Singapore, 2016.
 		\item F. Shah, K. Shah and D. Shah, "BER performance improvement with combination of OVSF spreading and convolution code in inter satellite links using FSO," Annual IEEE India Conference (INDICON), Mumbai, 2013.
-		\end{rSection}
+	\end{rSection}
+		
+	\begin{rSection}{Notable Projects}
+		
+	\begin{rSubsection}{tf\_cnnvis}{Jan, 2017 - Jun, 2017}{}{}{}
+		Designed an open source library for visualizing the learning happening in convolutional neural networks: \href{https://github.com/InFoCusp/tf_cnnvis}{tf\_cnnvis}. We studied the existing literature on the subject of representing the information learnt by neural networks in a human understandable format. We developed an optimized implementation of the various algorithms using TensorFlow. Users can just plug in their trained networks and look at the activation maps, deconvolution outputs and even the deepdream representation of their models in TensorBoard. The library quickly gained recognition and has been used by researchers from all over the globe. 
+	\end{rSubsection}
+		\vspace{0.1 in}
+	\begin{rSubsection}{Robust road detection for autonomous vehicles (Masters thesis work)}{Jun, 2014 - May, 2015}{}{}	{}
+		Studied existing literature on vision based road detection techniques, implemented the state of the art algoritms and studied their performance. Found certain defects in the existing methods based on the experiments, such as failure under specular reflections from the surface and not being able to detect large white painted portions and proposed an algorithm to overcome them. \\
+		Deployed a parallelized version the code on small, low cost development boards – BeagleBone Black and Raspberry Pi, thus presenting proof of the method being deployable on an actual vehicle and able to function in real time. Findings presented at the IEEE conference, Tencon in Singapore. 
+	\end{rSubsection}
+		\vspace{0.1 in}
+	\begin{rSubsection}{Kalman Filter Based GPS tracking  (Internship, ISRO)}{Jan, 2013 - May, 2013}{}{}	{}
+		There are 2 processes happening in a GPS receiver- acquisition and tracking. Acquisition is done at a coarser frequency and thus it is a more time consuming procedure than tracking. Ionospheric scintillations, which are a common occurrence during evenings cause outage of GPS signal and hence loss of phase lock, thus requiring re-acquision. I developed a Kalman filter based tracking loop that solves this problem and makes the receiver more robust. Kalman filter is a weighted filter, which ignores the measurements during outage and relies only on the state information, and retains phase lock. 
+	\end{rSubsection}
+	\vspace{0.1 in}
+	
+	
+	
+	
+	
+		\begin{rSubsection}{Portfolio Optimizer Design  (Cerebellum Capital/ Infocusp)}{Jan, 2016 - Mar, 2016}{}{}	{}
+		The trading signals obtained using ML techniques do not necessarily follow all the real life stock trading constraints. These include constraints like limits on short sale, unavailability of certain stocks, inclusion of non linear transaction costs and also hedging against risk. Designed an optimizer that takes as input an unoptimized trading signal and outputs the set of orders that maximize returns, minimize risk and also follow all the trading constraints. Was guided by Prof. Lisa Borland of Stanford University, who also works with CCI.
+		\end{rSubsection}
+		\vspace{0.1 in}
+		
+	\begin{rSubsection}{National Data Science Bowl (Kaggle Contest)}{}{}{}	{}
+	Participated in the NDSB kaggle contest and learnt different feature engineering techniques and CNN based methods for classification of ocean plankton images. Participated in number of Kaggle contests after this and learn variety of data analysis methods from the kernels.
+	\end{rSubsection}
+	
+	\vspace{0.1 in}
+	\end{rSection}
 	
 	\begin{rSection}{Online Courses Accomplished}
 		
@@ -165,6 +201,12 @@
 		
 	\end{rSection}
 	
-
+\begin{rSection}{Personal Information}
+		\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
+			Nationality &  Indian \\
+			Languages &  English, Hindi and Gujarati (mother tongue)\\
+			Interests & Fitness, Meditation, travelling to mountains and reading fiction
+		\end{tabular}
+		\end{rSection}
 	
 \end{document}
