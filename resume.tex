@@ -96,7 +96,7 @@
 		\end{rSubsection}
 		
 			\begin{rSubsection}{Intern, Indian Space Research Organization}{Jan, 2013 - May, 2013}{}{}
-				\item Designed and ran simulations on a highly robust GPS receiver model using Simulink. It made use of Kalman filter for seamless tracking loop operation even under severe ionospheric scinitllations. 
+				\item Designed and ran simulations on a highly robust GPS receiver model using Simulink. It made use of Kalman filter for seamless tracking loop operation even under severe ionospheric scintillations. 
 			\end{rSubsection}
 	\end{rSection}
 	
@@ -117,43 +117,40 @@
 	%----------------------------------------------------------------------------------------
 
 	\begin{rSection}{Publications}
-		\item Co authoring a book "Professional TensorFlow" for Packt Publishing (expected completion: Feb, 2018). This will serve as a student as well as instructor guide for practical trainings on TensorFlow. 
+		\item Co-authoring a book "Professional TensorFlow" for Packt Publishing (expected completion: Feb, 2018). This will serve as a student as well as instructor guide for practical training on TensorFlow. 
 		\item F. Shah, P. Shah and R. Dubey, "Specularity Removal for Robust Road Detection," IEEE International Conference Region 10 (TENCON), Singapore, 2016.
-		\item F. Shah, K. Shah and D. Shah, "BER performance improvement with combination of OVSF spreading and convolution code in inter satellite links using FSO," Annual IEEE India Conference (INDICON), Mumbai, 2013.
+		\item F. Shah, K. Shah and D. Shah, "BER performance improvement with combination of OVSF spreading and convolution code in inter-satellite links using FSO," Annual IEEE India Conference (INDICON), Mumbai, 2013.
 	\end{rSection}
 		
-	\begin{rSection}{Notable Projects}
+
+		\begin{rSection}{Notable Projects}
+			
+			\begin{rSubsection}{tfcnnvis}{Jan, 2017 - Jun, 2017}{}{}{}
+				\item Designed an open source library for visualizing the learning happening in convolutional neural networks: \href{https://github.com/InFoCusp/tf_cnnvis}{tf\_cnnvis}. We studied the existing literature on the subject of representing the information learned by neural networks in a human understandable format. We developed an optimized implementation of the various algorithms using TensorFlow. Users can just plug in their trained networks and look at the activation maps, deconvolution outputs and even the deepdream representation of their models in TensorBoard. The library quickly gained recognition and has been used by researchers from all over the globe. 
+			\end{rSubsection}
+			\vspace{0.1 in}
+			\begin{rSubsection}{Robust road detection for autonomous vehicles (Masters thesis work)}{Jun, 2014 - May, 2015}{}{}	{}
+				\item Studied existing literature on vision-based road detection techniques, implemented the state of the art algorithms and studied their performance. Found certain defects in the existing methods based on the experiments, such as failure under specular reflections from the surface and not being able to detect large white painted portions and proposed an algorithm to overcome them. \\
+				Deployed a parallelized version the code on small, low-cost development boards, BeagleBone Black and Raspberry Pi, thus presenting proof of the method being deployable on an actual vehicle and able to function in real time. Findings presented at the IEEE conference, Tencon in Singapore.
+			\end{rSubsection}
+			\vspace{0.1 in}
+			\begin{rSubsection}{Kalman Filter Based GPS tracking  (Internship, ISRO)}{Jan, 2013 - May, 2013}{}{}	{}
+			\item There are 2 processes happening in a GPS receiver- acquisition and tracking. Acquisition is done at a coarser frequency and thus it is a more time consuming procedure than tracking. Ionospheric scintillations, which are a common occurrence during evenings cause outage of GPS signal and hence loss of phase lock, thus requiring re-acquisition. I developed a Kalman filter based tracking loop that solves this problem and makes the receiver more robust. Kalman filter is a weighted filter, which ignores the measurements during outage and relies only on the state information, and retains phase lock. 
+			\end{rSubsection}
+			\vspace{0.1 in}
+			
+			\begin{rSubsection}{Portfolio Optimizer Design  (Cerebellum Capital/ Infocusp)}{Jan, 2016 - Mar, 2016}{}{}	{}
+			\item The trading signals obtained using ML techniques do not necessarily follow all the real life stock trading constraints. These include constraints like limits on short sale, unavailability of certain stocks, the inclusion of nonlinear transaction costs and also hedging against risk. Designed an optimizer that takes as input an unoptimized trading signal and outputs the set of orders that maximize returns, minimize risk and also follow all the trading constraints. Was guided by Prof. Lisa Borland of Stanford University, who also works with CCI.
+			\end{rSubsection}
+			\vspace{0.1 in}
+			
+			\begin{rSubsection}{National Data Science Bowl (Kaggle Contest)}{}{}{}	{}
+			\item Participated in the NDSB kaggle contest and learnt different feature engineering techniques and CNN based methods for classification of ocean plankton images. Participated in number of Kaggle contests after this and learnt a variety of data analysis methods from the kernels.
+			\end{rSubsection}
+			
+			\vspace{0.1 in}
+		\end{rSection}
 		
-	\begin{rSubsection}{tf\_cnnvis}{Jan, 2017 - Jun, 2017}{}{}{}
-		Designed an open source library for visualizing the learning happening in convolutional neural networks: \href{https://github.com/InFoCusp/tf_cnnvis}{tf\_cnnvis}. We studied the existing literature on the subject of representing the information learnt by neural networks in a human understandable format. We developed an optimized implementation of the various algorithms using TensorFlow. Users can just plug in their trained networks and look at the activation maps, deconvolution outputs and even the deepdream representation of their models in TensorBoard. The library quickly gained recognition and has been used by researchers from all over the globe. 
-	\end{rSubsection}
-		\vspace{0.1 in}
-	\begin{rSubsection}{Robust road detection for autonomous vehicles (Masters thesis work)}{Jun, 2014 - May, 2015}{}{}	{}
-		Studied existing literature on vision based road detection techniques, implemented the state of the art algoritms and studied their performance. Found certain defects in the existing methods based on the experiments, such as failure under specular reflections from the surface and not being able to detect large white painted portions and proposed an algorithm to overcome them. \\
-		Deployed a parallelized version the code on small, low cost development boards – BeagleBone Black and Raspberry Pi, thus presenting proof of the method being deployable on an actual vehicle and able to function in real time. Findings presented at the IEEE conference, Tencon in Singapore. 
-	\end{rSubsection}
-		\vspace{0.1 in}
-	\begin{rSubsection}{Kalman Filter Based GPS tracking  (Internship, ISRO)}{Jan, 2013 - May, 2013}{}{}	{}
-		There are 2 processes happening in a GPS receiver- acquisition and tracking. Acquisition is done at a coarser frequency and thus it is a more time consuming procedure than tracking. Ionospheric scintillations, which are a common occurrence during evenings cause outage of GPS signal and hence loss of phase lock, thus requiring re-acquision. I developed a Kalman filter based tracking loop that solves this problem and makes the receiver more robust. Kalman filter is a weighted filter, which ignores the measurements during outage and relies only on the state information, and retains phase lock. 
-	\end{rSubsection}
-	\vspace{0.1 in}
-	
-	
-	
-	
-	
-		\begin{rSubsection}{Portfolio Optimizer Design  (Cerebellum Capital/ Infocusp)}{Jan, 2016 - Mar, 2016}{}{}	{}
-		The trading signals obtained using ML techniques do not necessarily follow all the real life stock trading constraints. These include constraints like limits on short sale, unavailability of certain stocks, inclusion of non linear transaction costs and also hedging against risk. Designed an optimizer that takes as input an unoptimized trading signal and outputs the set of orders that maximize returns, minimize risk and also follow all the trading constraints. Was guided by Prof. Lisa Borland of Stanford University, who also works with CCI.
-		\end{rSubsection}
-		\vspace{0.1 in}
-		
-	\begin{rSubsection}{National Data Science Bowl (Kaggle Contest)}{}{}{}	{}
-	Participated in the NDSB kaggle contest and learnt different feature engineering techniques and CNN based methods for classification of ocean plankton images. Participated in number of Kaggle contests after this and learn variety of data analysis methods from the kernels.
-	\end{rSubsection}
-	
-	\vspace{0.1 in}
-	\end{rSection}
-	
 	\begin{rSection}{Online Courses Accomplished}
 		
 		\textbf{Machine Learning} \hfill {Stanford University}\\
@@ -190,13 +187,13 @@
 		\begin{rSubsection}{Placement Coordinator}{Nirma University}{}{}
 			\item Facilitating placement proceedings of B.Tech, EC batch of 2013
 			\item Responsible for developing contacts with corporate recruitment teams of several firms for placements 
-			\item Organized sessions on personality development, group discussions and mock interviews
+			\item Organized sessions on personality development, group discussions, and mock interviews
 		\end{rSubsection}
 		
 		%------------------------------------------------
 		
 		\begin{rSubsection}{Organizer, Teach group}{}{}{}
-		\item Formed  a group of volunteers to teach some underprivileged kids at a construction site near Nirma university 
+		\item Formed  a group of volunteers to teach some underprivileged kids at a construction site near Nirma University 
 		\end{rSubsection}
 		
 	\end{rSection}
@@ -205,7 +202,7 @@
 		\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
 			Nationality &  Indian \\
 			Languages &  English, Hindi and Gujarati (mother tongue)\\
-			Interests & Fitness, Meditation, travelling to mountains and reading fiction
+			Interests & Fitness, Meditation, traveling to mountains and reading fiction
 		\end{tabular}
 		\end{rSection}
 	
